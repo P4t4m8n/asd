@@ -1,0 +1,60 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #fff; /* Set text color to white for contrast */
+}
+
+.hero-section {
+  height: 100vh;
+  background-image: url("1.jpg"); /* First image as background */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero-section img {
+  display: none; /* Hide the img tag as we are using background images */
+}
+
+.content-wrapper {
+  padding: 20px;
+  background-image: url("1.jpg"); /* Second image as background - assuming you want the same image, change if needed */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* This will make it appear as a fixed background as content scrolls */
+  /* If you want the second image to be black and white, uncomment the next line */
+  /* filter: grayscale(100%); */
+}
+
+.main-content {
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.5
+  ); /* Semi-transparent black background for readability */
+  padding: 20px;
+  border-radius: 8px;
+  display: inline-block; /* So it doesn't take full width if content is short */
+}
+
+/* Remove parallax and old hero image styles */
+img {
+  max-width: 100%;
+  height: auto; /* Changed from 100% to auto for natural aspect ratio */
+  object-fit: cover; /* Changed from fill to cover */
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: auto; /* Changed from 70vh */
+}
+
+/* Removed .parallax-wrapper and .hero-section.scrolled img styles */
